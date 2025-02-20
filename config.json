@@ -1,9 +1,10 @@
 {
     "title":"王赞",
     "subTitle":"个人学习笔记",
-    "avatarUrl":"https://github.com/JiazanWang/Gmeek/blob/main/static/avatar.svg",
+    "avatarUrl":"https://github.com/JiazanWang/Gmeek/blob/main/static/mark-github.svg",
     "GMEEK_VERSION":"last",
-    "homeUrl":"http://wangjiazan.com",
+    "faviconUrl":"https://github.com/JiazanWang/Gmeek/blob/main/static/mark-github.svg",
+    "homeUrl":"http://code.wangjiazan.com",
     "email":"1710998763@qq.com",
     "startSite":"02/20/2025",
     "onePageListNum":10,
