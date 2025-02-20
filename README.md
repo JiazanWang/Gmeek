@@ -1,4 +1,4 @@
-# 王赞 :link: http://wangjiazan.com 
+# 王赞 :link: http://code.wangjiazan.com 
 ### :page_facing_up: [2](http://wangjiazan.com/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 26 
