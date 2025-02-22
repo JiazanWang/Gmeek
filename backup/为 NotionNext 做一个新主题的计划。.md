@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>王赞</title><link>http://code.wangjiazan.com</link><description>个人学习笔记</description><copyright>王赞</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>http://code.wangjiazan.com</link></image><lastBuildDate>Sat, 22 Feb 2025 18:27:36 +0000</lastBuildDate><managingEditor>王赞</managingEditor><ttl>60</ttl><webMaster>王赞</webMaster><item><title>为 NotionNext 做一个新主题的计划。</title><link>http://code.wangjiazan.com/post/wei-%20NotionNext%20-zuo-yi-ge-xin-zhu-ti-de-ji-hua-%E3%80%82.html</link><description> **NotionNext主题定制速成路线**，按周分解的详细技术学习计划，结合 **倒推式时间管理法** 设计，助您最快在 **12周** 内实现主题自由：
+ **NotionNext主题定制速成路线**，按周分解的详细技术学习计划，结合 **倒推式时间管理法** 设计，助您最快在 **12周** 内实现主题自由：
 
 ---
 
@@ -33,26 +32,26 @@ gantt
 - Day1：安装VSCode + Chrome + Node.js
 - Day2：学习HTML文档结构
   ```html
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang='zh-CN'&gt;
-  &lt;head&gt;
-    &lt;meta charset='UTF-8'&gt;
-    &lt;title&gt;我的博客&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id='header'&gt;&lt;/div&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
+  <!DOCTYPE html>
+  <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>我的博客</title>
+  </head>
+  <body>
+    <div id="header"></div>
+  </body>
+  </html>
   ```
 - Day3：使用Chrome审查元素定位博客标题
-- Day4：修改`&lt;h1&gt;`标签内容测试效果
+- Day4：修改`<h1>`标签内容测试效果
 - Day5：理解块级/行内元素区别
-- Day6：实战：在NotionNext中添加&lt;div class='test-box'&gt;
+- Day6：实战：在NotionNext中添加<div class="test-box">
 - Day7：复习+问题整理
 
 # Week 2: CSS核心突破
 ## 关键技术点
-- 选择器优先级：`#header &gt; .nav-item` 的权重计算
+- 选择器优先级：`#header > .nav-item` 的权重计算
 - 盒模型：`box-sizing: border-box` 的实际应用
 - Flex布局：实现导航栏水平排列
 - CSS变量：定义主题色`--primary-color: #3f51b5;`
@@ -74,7 +73,7 @@ gantt
 3. 控制台命令：
    ```js
    // 获取所有使用Flex布局的元素
-   $$('*').filter(el =&gt; getComputedStyle(el).display === 'flex')
+   $$('*').filter(el => getComputedStyle(el).display === 'flex')
    ```
 
 ## 实战目标
@@ -115,11 +114,11 @@ gantt
 - 组件函数定义：
   ```jsx
   export default function Header({ title }) {
-    return &lt;h1&gt;{title}&lt;/h1&gt;
+    return <h1>{title}</h1>
   }
   ```
 - Props传递机制：父组件→子组件数据流
-- 条件渲染：`{showNav &amp;&amp; &lt;Navigation /&gt;}`
+- 条件渲染：`{showNav && <Navigation />}`
 
 ## 实战任务
 - 调整博客头部布局结构
@@ -164,13 +163,13 @@ module.exports = {
 1. 在`blog.config.js`添加`darkMode: true`
 2. 使用Tailwind暗黑类：
    ```html
-   &lt;div className='dark:bg-gray-900 bg-white'&gt;
+   <div className="dark:bg-gray-900 bg-white">
    ```
 3. 添加模式切换按钮：
    ```jsx
-   &lt;button onClick={() =&gt; setDarkMode(!darkMode)}&gt;
+   <button onClick={() => setDarkMode(!darkMode)}>
      {darkMode ? '🌞' : '🌙'}
-   &lt;/button&gt;
+   </button>
    ```
 
 ## 预期成果
@@ -218,8 +217,8 @@ module.exports = {
 ```markdown
 # Week 11: 样式优化
 ## 关键指标
-- Lighthouse评分 &gt; 90
-- 首屏加载时间 &lt; 1s
+- Lighthouse评分 > 90
+- 首屏加载时间 < 1s
 - 颜色对比度符合WCAG标准
 
 ## 优化手段
@@ -247,7 +246,7 @@ module.exports = {
 1. **本地调试环境**
    ```bash
    git clone https://github.com/tangly1024/NotionNext
-   cd NotionNext &amp;&amp; npm install
+   cd NotionNext && npm install
    cp .env.example .env.local # 配置Notion密钥
    npm run dev
    ```
@@ -291,7 +290,7 @@ module.exports = {
 3. **移动端显示错乱**
    - 添加Viewport Meta标签
    ```html
-   &lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    ```
    - 使用Chrome设备模式调试
 ```
@@ -302,7 +301,4 @@ module.exports = {
 - 完全自定义的NotionNext主题
 - 前端开发基础能力
 - 工程化思维与实践经验
-建议每周末进行 **成果演示**（截图存档），保持学习动力。</description><guid isPermaLink="true">http://code.wangjiazan.com/post/wei-%20NotionNext%20-zuo-yi-ge-xin-zhu-ti-de-ji-hua-%E3%80%82.html</guid><pubDate>Sat, 22 Feb 2025 18:27:09 +0000</pubDate></item><item><title>DeepSeek 给出的一条全栈开发技术路线。</title><link>http://code.wangjiazan.com/post/DeepSeek%20-gei-chu-de-yi-tiao-quan-zhan-kai-fa-ji-shu-lu-xian-%E3%80%82.html</link><description>以下是一个基于前端、后端以及AI相关技术的学习路线总结：
-
-1. 前端
-	•	Vercel：了解如何部署和托管前端应用，支持自动化部署。</description><guid isPermaLink="true">http://code.wangjiazan.com/post/DeepSeek%20-gei-chu-de-yi-tiao-quan-zhan-kai-fa-ji-shu-lu-xian-%E3%80%82.html</guid><pubDate>Sat, 22 Feb 2025 12:57:48 +0000</pubDate></item><item><title>多番折腾，个人 Running Page 也上线了。</title><link>http://code.wangjiazan.com/post/duo-fan-zhe-teng-%EF%BC%8C-ge-ren-%20Running%20Page%20-ye-shang-xian-le-%E3%80%82.html</link><description>刷 Github 的时候发现一个项目，它能下载你的运动数据，然后生成一个 Running Page，对于喜欢跑步的人来说，有这样一个界面还是很炫酷的，于是便折腾几小时，终于是把它搞定，大家可以点击链接查看[ Running Page](https://run.wangjiazan.com/)。</description><guid isPermaLink="true">http://code.wangjiazan.com/post/duo-fan-zhe-teng-%EF%BC%8C-ge-ren-%20Running%20Page%20-ye-shang-xian-le-%E3%80%82.html</guid><pubDate>Fri, 21 Feb 2025 17:21:26 +0000</pubDate></item><item><title>AI 时代，个人创作更具有价值。</title><link>http://code.wangjiazan.com/post/AI%20-shi-dai-%EF%BC%8C-ge-ren-chuang-zuo-geng-ju-you-jia-zhi-%E3%80%82.html</link><description>显然，现在对于我们而言，都有了一个很好的编程老师，那就是 AI，以前我们遇到编程上的问题，可能辗转于各个社区才能找到解决方案，但是现在情况变了，AI 能帮你解决你遇到的大部分问题，所以很多社区也不在那么活跃。</description><guid isPermaLink="true">http://code.wangjiazan.com/post/AI%20-shi-dai-%EF%BC%8C-ge-ren-chuang-zuo-geng-ju-you-jia-zhi-%E3%80%82.html</guid><pubDate>Thu, 20 Feb 2025 12:03:58 +0000</pubDate></item><item><title>通过Gmeek搭建个人博客。</title><link>http://code.wangjiazan.com/post/tong-guo-Gmeek-da-jian-ge-ren-bo-ke-%E3%80%82.html</link><description>折腾了很多工具，没有哪一款能很好地满足我的需求，想要写的太多，太杂，就不知道从哪里开始写，在哪个平台开始创作，于是便折腾自己的个人博客。</description><guid isPermaLink="true">http://code.wangjiazan.com/post/tong-guo-Gmeek-da-jian-ge-ren-bo-ke-%E3%80%82.html</guid><pubDate>Thu, 20 Feb 2025 11:40:44 +0000</pubDate></item><item><title>关于</title><link>http://code.wangjiazan.com/about.html</link><description>这是我通过开源项目Gmeek搭建的个人博客，所有内容都依托Github存在，我将在这里记录编程学习日常，欢迎订阅。</description><guid isPermaLink="true">http://code.wangjiazan.com/about.html</guid><pubDate>Thu, 20 Feb 2025 12:27:42 +0000</pubDate></item></channel></rss>
+建议每周末进行 **成果演示**（截图存档），保持学习动力。遇到问题优先查阅官方文档，其次在Discord社区提问。
